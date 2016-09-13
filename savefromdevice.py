@@ -18,7 +18,7 @@ def get_user_friendly_name(identifier):
 
 def parse_args():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('--save-dir', help='local dir for saving blobs (default: ~/.shsh)', default=os.path.join(os.path.expanduser('~'), '.shsh'))
+	parser.add_argument('--save-dir', help='local dir for saving blobs (default: ~/.shsh_blobs)', default=os.path.join(os.path.expanduser('~'), '.shsh_blobs'))
 	parser.add_argument('--overwrite', help='overwrite any existing blobs', action='store_true')
 	parser.add_argument('--overwrite-apple', help='overwrite any existing blobs (only from Apple)', action='store_true')
 	parser.add_argument('--overwrite-cydia', help='overwrite any existing blobs (only from Cydia)', action='store_true')
